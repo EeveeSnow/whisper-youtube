@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video transcription</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <form id="video-form">
+    <input id="video-url" type="text" placeholder="Youtube link">
+    <button id="video-submit" type="submit">submit</button>
+  </form>
+  <div id="video-container">
+    <video id="video-player" controls src="">
+      <track id="video-st" kind="subtitles" srclang="en" label="English" src="" default>
+      Video unsupported in this browser
+        <audio id="video-audio">
+          Video audio unsupported in this browser <audio>.
+        </audio>
+    </video>
+  </div>
+  
+  <script src="server_api.js">
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@media (prefers-color-scheme: light) {
+    :root {
+      --text: #110f0e;
+      --background: #f9f7f6;
+      --primary: #633e31;
+      --secondary: #d29a83;
+      --accent: #aa502c;
+      font-family: 'Poppins', ui-sans-serif;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #f0eeed;
+      --background: #090706;
+      --primary: #cea99b;
+      --secondary: #7a422c;
+      --accent: #d37854;
+      font-family: 'Poppins', ui-sans-serif;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+        --text: #120222;
+        --background: #faf6fe;
+        --primary: #480a8a;
+        --secondary: #f362ab;
+        --accent: #cc0f2c;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #edddfd;
+        --background: #050109;
+        --primary: #b375f5;
+        --secondary: #9d0c54;
+        --accent: #f0334f;
+    }
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+  #video-container {
+    width: 80lvw;
+    height: 80lvh;
+    margin: 20px auto;
+  }
+  #video-player {
+    width: 100%;
+    height: 100%;
+  }
+  #video-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #video-url {
+    width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-right: var(--background) 0.5em;
+    color: var(--background);
+    background-color: var(--primary);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    letter-spacing: normal;
+  }
+  #video-submit {
+    width: 100px;
+    padding: 10px;
+    font-size: 1em;
+    background: linear-gradient(to right, var(--secondary), var(--accent));
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    letter-spacing: normal;
+  }
